@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\ControllerCoba;
+use App\Http\Controllers\users;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/users', [ControllerCoba::class, 'index']);
+Route::get('/users', [users::class, 'index']);
